@@ -3,6 +3,7 @@ body,html{
 	margin:0;
 	font: 400 15px/1.8 "Lato", sans-serif;
 	color:#777;
+	
 
 }
 
@@ -68,7 +69,7 @@ body,html{
 	text-align: center;
 	color: #fff;
 	padding: 50px 80px;
-	min-height: 400px;
+	min-height: 200px;
 }
 
 .sign-login-btn h1{
@@ -101,4 +102,4 @@ h2{
 .w3-allerta {
   font-family: "Allerta Stencil", Sans-serif;
 }
-</style>
+

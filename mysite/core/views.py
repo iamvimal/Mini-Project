@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate
 from django.shortcuts import render, redirect
 
-from mysite.core.forms import SignUpForm
+from core.forms import SignUpForm
 
 
 @login_required
@@ -13,10 +13,11 @@ def home(request):
 def homepage(request):
     return render(request, 'homepage.html')
     
-def login(request):
+def log_in(request):
     return render(request, 'login.html')
     
     
+
 def signup(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
@@ -33,4 +34,7 @@ def signup(request):
     
 def about(request):
     return render(request, 'about.html')
-    
+
+
+
+

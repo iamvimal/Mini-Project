@@ -1,6 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Welcome, {{ user.get_full_name }} <small>{{ user.username }}</small>!</h2>
-  <p>Logged in using: {{ user.email }}</p>
+    {% load static %}
+    <div class="rest-select">
+        <p>Choose your restaurant...</p>
+        <a href=""><img src="{% static "styles/nandos.jpg" %}" alt="nandos" width="200px" height="200px"></a>
+        <a href=""><img src="{% static "styles/burgerking.png" %}" alt="burgerking" width="150px" height="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=""><img src="{% static "styles/mcd.jpg" %}" alt="mcd" width="150px" height="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=""><img src="{% static "styles/barista.jpg" %}" alt="barista" width="150px" height="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=""><img src="{% static "styles/dominoes.png" %}" alt="mcd" width="150px" height="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>
+        <a href=""><img src="{% static "styles/subway.png" %}" alt="mcd" width="300px" height="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=""><img src="{% static "styles/pizzahut.png" %}" alt="mcd" width="200px" height="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=""><img src="{% static "styles/sbarro.png" %}" alt="mcd" width="250px" height="150px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <br><br><br>
 {% endblock %}
